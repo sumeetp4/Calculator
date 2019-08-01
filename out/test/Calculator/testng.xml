@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" configfailurepolicy="continue" name="pCloudy Suite" parallel="tests">
+    <test name="firstTest">
+        <parameter name="deviceName" value="Samsung"/>
+        <classes>
+            <class name="com.test.pCloudyTest.pCloudyDemo"/>
+        </classes>
+    </test> <!--Test-->
+    <test name="secondTest">
+        <parameter name="deviceName" value="Google"/>
+        <classes>
+            <class name="com.test.pCloudyTest.pCloudyDemo"/>
+        </classes>
+    </test> <!--Test-->
+</suite>
